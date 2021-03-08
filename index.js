@@ -2,9 +2,7 @@ import {
   debounceTime,
   map,
   distinctUntilChanged,
-  tap,
   mergeMap,
-  pluck,
 } from "rxjs/operators";
 import { fromEvent, of } from "rxjs";
 const url = "http://localhost:3000/clubs?q=";
