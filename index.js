@@ -20,8 +20,6 @@ let autoSuggest$ = textChange$.pipe(
 );
 
 autoSuggest$.subscribe((v) => {
-  console.log(v);
-
   let list = document.getElementsByClassName("list-group")[0];
   while (list.firstChild) {
     list.removeChild(list.firstChild);
@@ -34,5 +32,3 @@ autoSuggest$.subscribe((v) => {
     list.appendChild(li);
   }
 });
-
-//document.getElementsByClassName("list-group-item")[0].style.display = "none";
